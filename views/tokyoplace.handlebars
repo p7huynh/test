@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='171095167-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115310420-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-115310420-1');
+</script>
+
+
+
+	<title>T-T-T-Tokyo!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	{{> header}}
+
+    <style>
+    legend { 
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 50%;
+    border-style: groove;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png");
+    background-position: center;
+    background-size: 80%; 
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    text-shadow: 3px 2px yellow;
+}
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 20%;
+  background-color: #f1f1f1;
+}
+.header h3 {
+  text-align: center;
+}
+.progress-container {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.progress-bar {
+  height: 8px;
+  background: blue;
+  width: 0%;
+}
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+  width: 13%;
+  height: 7%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+  background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: 60%; 
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+#myBtnTop {
+   display: block;
+  position: fixed;
+  top: 10px;
+  left: 175px;
+  width: 13%;
+  height: 7%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+  background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: 60%; 
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+#myBtnTop:hover {
+  background-color: #555;
+}
+/*
+GOOGLE ANALYSTIVCC*/
+</style>
+
+</head>
+<body>
+	<!-- Put if and else statemnet here -->
+	
+	<button class="TopBtn" onclick="topFunction()" id="myBtn"></button>
+	
+	<button class="TopBtn" onclick="topFunction()" id="myBtnTop"></button>
+	
+
+
+<div class="navbar">
+  <a href="chooseplace">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Schedule 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tokyoschedule">Tokyo</a>
+      <a href="newyorkschedule">New York City</a>
+      <a href="romeschedule">Rome</a>
+    </div>
+  </div> 
+<!--   <a href="schedule">Schedule</a> -->
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chooseplace">Discover</a>
+      <a href="tokyoplace">Tokyo</a>
+      <a href="newyork">New York City</a>
+      <a href="rome">Rome</a>
+      <a href="login">Log In</a>
+      <a href="login">Sign Out</a>
+      <a href="help">Help?</a>
+    </div>
+  </div> 
+</div>
+
+<br>
+<form action="/tokyoschedule" method="get">
+{{#each japanactivities}}
+<fieldset>
+	<hr>
+	<legend><h3>Japan:</h3></legend>
+      	<div class="japanactivities" id="{{jpname}}">
+          		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
+          		<img src="{{jppic}}" class "img-responsive" style="width: 100%">
+          		<p><b>{{jpname}}</b></p>
+          		<p>Description: {{jpdes}}</p>
+          		<p>Average Hours Spent: {{jphours}}</p>
+          		<p>Average Price: {{jpprices}}</p>
+      	</div>
+    		<div>
+				<i>Start:</i><select id = {{jpname}} name= {{jpname}} value=null>
+					<option value="0" selected>0</option>
+					<option value="6">6 AM</option>
+					<option value="7">7 AM</option>
+					<option value="8">8 AM</option>
+					<option value="9">9 AM</option>
+					<option value='10'>10 AM</option>
+					<option value='11'>11 AM</option>
+					<option value='12'>12 PM</option>
+					<option value='13'>1 PM</option>
+					<option value='14'>2 PM</option>
+					<option value='15'>3 PM</option>
+					<option value='16'>4 PM</option>
+					<option value='17'>5 PM</option>
+					<option value='18'>6 PM</option>
+					<option value='19'>7 PM</option>
+					<option value='20'>8 PM</option>
+					<option value='21'>9 PM</option>
+					<option value='22'>10 PM</option>
+					<option value='23'>11 PM</option>
+					<option value='24'>12 AM</option>
+				</select>
+				<i>End:</i> <select id = end{{jpname}} name= end{{jpname}} value="0">
+					<option value="0" selected>0</option>
+					<option value="6">6 AM</option>
+					<option value="7">7 AM</option>
+					<option value="8">8 AM</option>
+					<option value="9">9 AM</option>
+					<option value='10'>10 AM</option>
+					<option value='11'>11 AM</option>
+					<option value='12'>12 PM</option>
+					<option value='13'>1 PM</option>
+					<option value='14'>2 PM</option>
+					<option value='15'>3 PM</option>
+					<option value='16'>4 PM</option>
+					<option value='17'>5 PM</option>
+					<option value='18'>6 PM</option>
+					<option value='19'>7 PM</option>
+					<option value='20'>8 PM</option>
+					<option value='21'>9 PM</option>
+					<option value='22'>10 PM</option>
+					<option value='23'>11 PM</option>
+					<option value='24'>12 AM</option>
+				</select>
+		</div>
+	</fieldset>
+	<hr>
+{{/each}}
+
+{{#each japanfood}}
+<fieldset>
+	<hr>
+	<legend><h3>Japan:</h3></legend>
+	<div class="japanfood" id="{{jpstore}}">
+          		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
+          		<img src="{{jpimage}}" class "img-responsive" style="width: 100%">
+          		<p><b>{{jpstore}}</b></p>
+          		<p>Known For: {{jpknown}}</p>
+          		<p>Average Price: {{jpfoodprice}}</p>
+      	</div>
+    		<div>
+				<i>Start:</i><select id = {{jpstore}} name= {{jpstore}} value=null>
+					<option value="0" selected>0</option>
+					<option value="6">6 AM</option>
+					<option value="7">7 AM</option>
+					<option value="8">8 AM</option>
+					<option value="9">9 AM</option>
+					<option value='10'>10 AM</option>
+					<option value='11'>11 AM</option>
+					<option value='12'>12 PM</option>
+					<option value='13'>1 PM</option>
+					<option value='14'>2 PM</option>
+					<option value='15'>3 PM</option>
+					<option value='16'>4 PM</option>
+					<option value='17'>5 PM</option>
+					<option value='18'>6 PM</option>
+					<option value='19'>7 PM</option>
+					<option value='20'>8 PM</option>
+					<option value='21'>9 PM</option>
+					<option value='22'>10 PM</option>
+					<option value='23'>11 PM</option>
+					<option value='24'>12 AM</option>
+				</select>
+				<i>End:</i> <select id = end{{jpstore}} name= end{{jpstore}} value="0">
+					<option value="0" selected>0</option>
+					<option value="6">6 AM</option>
+					<option value="7">7 AM</option>
+					<option value="8">8 AM</option>
+					<option value="9">9 AM</option>
+					<option value='10'>10 AM</option>
+					<option value='11'>11 AM</option>
+					<option value='12'>12 PM</option>
+					<option value='13'>1 PM</option>
+					<option value='14'>2 PM</option>
+					<option value='15'>3 PM</option>
+					<option value='16'>4 PM</option>
+					<option value='17'>5 PM</option>
+					<option value='18'>6 PM</option>
+					<option value='19'>7 PM</option>
+					<option value='20'>8 PM</option>
+					<option value='21'>9 PM</option>
+					<option value='22'>10 PM</option>
+					<option value='23'>11 PM</option>
+					<option value='24'>12 AM</option>
+				</select>
+		</div>
+		</fieldset>
+	<hr>
+{{/each}}
+
+{{#each japanshopping}}
+<fieldset>
+	<hr>
+	<legend><h3>Japan:</h3></legend>
+	<div class="japanshopping" id="{{jpshopping}}">
+          		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
+          		<img src="{{jpshopimage}}" class "img-responsive" style="width: 100%">
+          		<p><b>{{jpshopping}}</b></p>
+          		<p>Type: {{jpshopdes}}</p>
+      	</div>
+    		<div>
+				<i>Start:</i><select id = {{jpshopping}} name= {{jpshopping}} value=null>
+					<option value="0" selected>0</option>
+					<option value="6">6 AM</option>
+					<option value="7">7 AM</option>
+					<option value="8">8 AM</option>
+					<option value="9">9 AM</option>
+					<option value='10'>10 AM</option>
+					<option value='11'>11 AM</option>
+					<option value='12'>12 PM</option>
+					<option value='13'>1 PM</option>
+					<option value='14'>2 PM</option>
+					<option value='15'>3 PM</option>
+					<option value='16'>4 PM</option>
+					<option value='17'>5 PM</option>
+					<option value='18'>6 PM</option>
+					<option value='19'>7 PM</option>
+					<option value='20'>8 PM</option>
+					<option value='21'>9 PM</option>
+					<option value='22'>10 PM</option>
+					<option value='23'>11 PM</option>
+					<option value='24'>12 AM</option>
+				</select>
+				<i>End:</i> <select id = end{{jpshopping}} name= end{{jpshopping}} value="0">
+					<option value="0" selected>0</option>
+					<option value="6">6 AM</option>
+					<option value="7">7 AM</option>
+					<option value="8">8 AM</option>
+					<option value="9">9 AM</option>
+					<option value='10'>10 AM</option>
+					<option value='11'>11 AM</option>
+					<option value='12'>12 PM</option>
+					<option value='13'>1 PM</option>
+					<option value='14'>2 PM</option>
+					<option value='15'>3 PM</option>
+					<option value='16'>4 PM</option>
+					<option value='17'>5 PM</option>
+					<option value='18'>6 PM</option>
+					<option value='19'>7 PM</option>
+					<option value='20'>8 PM</option>
+					<option value='21'>9 PM</option>
+					<option value='22'>10 PM</option>
+					<option value='23'>11 PM</option>
+					<option value='24'>12 AM</option>
+				</select>
+		</div>
+		</fieldset>
+	<hr>
+{{/each}}
+<br><br><br><br><br><br>
+
+<!--Progress bar-->
+<div class="header">
+  <h3>  Hit Complete to add event to Schedule</h3>
+  <input type="submit" name="" value="Complete">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+<!-- <input type="submit" name="" value="Complete"> -->
+</form>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {
+	myFunction();
+	scrollFunction();
+};
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+// When the user scrolls down 20px from the top of the document, show the button
+//window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    try{
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtnTop").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtnTop").style.display = "none";
+    }
+     }
+     catch(err){
+     	console.log("I Expected Error This error for Goolge Analytic")
+     }    
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!-- GOOOOOOOGLE ANALYTIC -->
+<script src="/js/introHCI.js"></script>
+<!-- Google Analytics -->
+<!-- <script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-115310420-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script> -->
+<!-- End Google Analytics -->
+</body>
+</html>

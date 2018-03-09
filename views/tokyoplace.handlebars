@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='171095167-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115310420-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-115310420-1');
-</script>
-
-
 
 	<title>T-T-T-Tokyo!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,19 +73,16 @@ input[type=submit] {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
-
   background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
     background-position: center;
     background-repeat: no-repeat;
      background-size: 60%; 
-
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 2s infinite;
 }
 #myBtn:hover {
   background-color: #555;
 }
-
 #myBtnTop {
    display: block;
   position: fixed;
@@ -127,28 +99,23 @@ input[type=submit] {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
-
   background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
     background-position: center;
     background-repeat: no-repeat;
      background-size: 60%; 
-
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 2s infinite;
 }
-
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     from {background-color: red;}
     to {background-color: blue;}
 }
-
 /* Standard syntax */
 @keyframes mymove {
     from {background-color: red;}
     to {background-color: blue;}
 }
-
 #myBtnTop:hover {
   background-color: #555;
 }
@@ -159,13 +126,9 @@ GOOGLE ANALYSTIVCC*/
 </head>
 <body>
 	<!-- Put if and else statemnet here -->
-	
+
 	<button class="TopBtn" onclick="topFunction()" id="myBtn"></button>
 	
-	<button class="TopBtn" onclick="topFunction()" id="myBtnTop"></button>
-	
-
-
 <div class="navbar">
   <a href="chooseplace">Home</a>
   <div class="dropdown">
@@ -407,18 +370,12 @@ function myFunction() {
 // When the user scrolls down 20px from the top of the document, show the button
 //window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    try{
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
-        document.getElementById("myBtnTop").style.display = "block";
-    } else {
+    } 
+    else {
         document.getElementById("myBtn").style.display = "none";
-        document.getElementById("myBtnTop").style.display = "none";
     }
-     }
-     catch(err){
-     	console.log("I Expected Error This error for Goolge Analytic")
-     }    
 }
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -428,6 +385,10 @@ function topFunction() {
 </script>
 
 <!-- GOOOOOOOGLE ANALYTIC -->
+<!-- <script src="/js/introHCI.js"></script> -->
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script src="/js/introHCI.js"></script>
 <!-- Google Analytics -->
 <!-- <script>

@@ -10,11 +10,13 @@ $(document).ready(function() {
  
 function initializePage() {
 	// your code here
+		// gtag("create","UA-115310420-1","auto");
 	$(".TopBtn").click(function() {
-		//gtag("create","UA-115310420-1","auto");
 		// ga("send", "event", "top", "click");
-			gtag('create','UA-115310420-1','auto');
-			ga('send','event','top','click');
+			// gtag('create','UA-115310420-1','auto');
+			// gtag('send','event','top','click');
+			gtag('event', 'top', 'click');
+
 			console.log("Event loaded");
 	});
 }

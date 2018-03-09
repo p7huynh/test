@@ -127,7 +127,12 @@ GOOGLE ANALYSTIVCC*/
 <body>
 	<!-- Put if and else statemnet here -->
 
+	<!-- Put if and else statemnet here -->
+	{{#if viewAlt}}
+	<button class="TopBtn" onclick="topFunction()" id="myBtnTop"></button>
+	{{else}}
 	<button class="TopBtn" onclick="topFunction()" id="myBtn"></button>
+	{{/if}}
 	
 <div class="navbar">
   <a href="chooseplace">Home</a>
@@ -370,12 +375,18 @@ function myFunction() {
 // When the user scrolls down 20px from the top of the document, show the button
 //window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
+    try{
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
-    } 
-    else {
+        document.getElementById("myBtnTop").style.display = "block";
+    } else {
         document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtnTop").style.display = "none";
     }
+     }
+     catch(err){
+     	console.log("I Expected Error This error for Goolge Analytic")
+     }    
 }
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
